@@ -8,11 +8,23 @@ def main():
         print("It's lunch time")
     elif 7 <= time <= 8:
         print("It's breakfast time")
+    else:
+        print("It's not time to eat!")
         
    
 def convert(time):
+    pm = False
+    if "pm" in time:
+        pm = True
+    # print(pm)
+    time = time.replace("pm", "").replace("am","")
+    # print(time)
     hours, minutes = time.split(":")
+    # print(hours, minutes)
+    if pm:
+        hours = float(hours) + 12
     time = float(hours) + float(minutes)/60
+    # print(time)
     return time
 
 if __name__ == "__main__":
