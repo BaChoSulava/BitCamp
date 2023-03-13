@@ -1,5 +1,3 @@
-import tkinter as tk
-
 text = input("What is the input string? ") 
 sum = len(text)
 
