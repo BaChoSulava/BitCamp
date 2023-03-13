@@ -1,12 +1,6 @@
 
 def convert(inp):
-    match inp:
-        case ":)":
-            return "🙂"
-        case ":(":
-            return "🙁"
-        case _:
-            return inp
+    return inp.replace(":)", "🙂").replace(":(", "🙁")
 def main():
     inp = input("write text: ")
     print(convert(inp))
