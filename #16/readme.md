@@ -73,22 +73,13 @@ Expected result:
 
 
 ## ფსევდოკოდი - Pseudocode
-TipCaluclator
-    Initialize billAmount to 0
-    Initialize tip to 0
-    Initialize tipRate to 0
-    Initialize total to 0
+is_valid
+    input plate
 
-    Prompt for billAmount with "What is the bill amount?"
-    Prompt fot tipRate with "What is the tip rate?"
+    check if all validation options
+    
+    if check out then return "valid"
+    
+    else  "Invalid"
 
-    convert billAmount to a number
-    covnert tipRate to a number
-
-    tip = billAmount * (tipRate / 100)
-    round tip up to nearest cent
-    total = billAmount + tip
-
-    Display "Tip: $" + tip
-    Display "Total: $" + total
 End
