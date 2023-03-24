@@ -13,7 +13,7 @@ whire text? twitter
 ### Inputs, Processes, Outputs
 არსებითი სახელები:
 - inputed text / text
-- output text / out_text
+- output text / omitted_text
 
 ზმნები:
 - input text
