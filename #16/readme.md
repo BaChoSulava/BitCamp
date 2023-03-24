@@ -76,7 +76,7 @@ Expected result:
 is_valid
     input plate
 
-    check if all validation options
+    check for all validation options
     
     if check out then return "valid"
     
