@@ -13,8 +13,7 @@ In a file called coke.py, implement a program that prompts the user to insert a 
 
 ### Inputs, Processes, Outputs
 არსებითი სახელები:
-- amount inserted each time/ insert_coin
-- hole amount / hole_amount
+- amount inserted each time/ coin
 - Amount Due / amount_due
 - change to return / change_owed
 
