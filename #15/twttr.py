@@ -10,7 +10,7 @@ def ommit_vowels(text):
             omitted_text += ""
         else:
             omitted_text += letter
-    print(omitted_text)
+    # print(omitted_text)
     return omitted_text
 
 
