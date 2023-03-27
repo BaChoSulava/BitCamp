@@ -9,4 +9,4 @@ def calculations_test():
     assert calculations(60) == "Change Owed: 10"
 
 
-calculations_test()
+
