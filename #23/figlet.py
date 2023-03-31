@@ -3,11 +3,11 @@ import random
 
 figlet = Figlet()
 
-#learn what user want to do with text
+#learn what user whant to do with text
 while True:
     text_type = input("text type: ")
     splited_text_type = text_type.split()
-    print(splited_text_type)
+    # print(splited_text_type)
     if len(splited_text_type) == 0 or len(splited_text_type) == 2:
         break
 
@@ -18,7 +18,7 @@ text = input("text input: ")
 font_type = ''
 if len(splited_text_type) == 0:
     font_type = random.choice(figlet.getFonts())
-    print(font_type)
+    # print(font_type)
 else:
     if splited_text_type[0] != "-f" and splited_text_type[0] != "--font":
         print("error writing '-f' or '--font'")
