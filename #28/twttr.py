@@ -1,8 +1,8 @@
 def main():
     word = input("Input: ")
-    ommit_vowels(word)
+    shorten(word)
 
-def ommit_vowels(word):
+def shorten(word):
     omitted_text = ""
     vowels = ["A", "E", "I", "O", "U"]
     for letter in word:
@@ -16,3 +16,4 @@ def ommit_vowels(word):
 
 if __name__ == "__main__":
     main()
+
