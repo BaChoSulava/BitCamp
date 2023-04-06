@@ -6,7 +6,12 @@ import inflect
 
 def main():
     birthday = get_date()
-    age_in_minutes(birthday)
+    answer = age_in_minutes(birthday)
+    
+    if answer != 1:
+        answer += "s"
+    print(answer)
+    
 
 def get_date():
     birth_date = input("Date of Birth: ")
@@ -28,11 +33,8 @@ def age_in_minutes(birthday):
     age_in_minutes = round(age.total_seconds() / 60)
 
     p = inflect.engine()
-    age_str = p.number_to_words(age_in_minutes) + " minute"
-    if age_in_minutes != 1:
-        age_str += "s"
-
-    print("{}".format(age_str))
+    age_str = p.number_to_words(age_in_minutes)
+    return age_str
     
 
 if __name__ == "__main__":
