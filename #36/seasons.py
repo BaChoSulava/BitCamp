@@ -25,25 +25,14 @@ def age_in_minutes(birthday):
     today = date.today()
     user_birthdate = date(int(birthday[0]), int(birthday[1]), int(birthday[2]))
     age = today - user_birthdate
-    
-    years = age.days // 365
-    months = (age.days % 365) // 30
-    days = (age.days % 365) % 30
+    age_in_minutes = round(age.total_seconds() / 60)
 
     p = inflect.engine()
-    age_str = p.number_to_words(years) + " year"
-    if years != 1:
+    age_str = p.number_to_words(age_in_minutes) + " minute"
+    if age_in_minutes != 1:
         age_str += "s"
-    if months > 0:
-        age_str += ", " + p.number_to_words(months) + " month"
-        if months != 1:
-            age_str += "s"
-    if days > 0:
-        age_str += ", " + p.number_to_words(days) + " day"
-        if days != 1:
-            age_str += "s"
 
-    print("You are {} old.".format(age_str))
+    print("{}".format(age_str))
     
 
 if __name__ == "__main__":
