@@ -1,11 +1,11 @@
 def main():
-    text = input("Input: ")
-    ommit_vowels(text)
+    word = input("Input: ")
+    ommit_vowels(word)
 
-def ommit_vowels(text):
+def ommit_vowels(word):
     omitted_text = ""
     vowels = ["A", "E", "I", "O", "U"]
-    for letter in text:
+    for letter in word:
         if letter.upper() in vowels:
             omitted_text += ""
         else:
